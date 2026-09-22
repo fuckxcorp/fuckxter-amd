@@ -18,7 +18,7 @@
 		A00000000000000000000019 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000009 /* MessagesView.swift */; };
 		A00000000000000000000020 /* ProfileViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000010 /* ProfileViews.swift */; };
 		A00000000000000000000021 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000A /* LoginView.swift */; };
-		A00000000000000000000022 /* FuckXter.icon in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000D /* FuckXter.icon */; };
+		A00000000000000000000022 /* fuckxter.png in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000D /* fuckxter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		A0000000000000000000000A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A0000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0000000000000000000000C /* FuckXter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckXter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0000000000000000000000D /* FuckXter.icon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FuckXter.icon; path = FuckXter.icon; sourceTree = SOURCE_ROOT; };
+		A0000000000000000000000D /* fuckxter.png */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fuckxter.png; path = fuckxter.png; sourceTree = SOURCE_ROOT; };
 		A00000000000000000000010 /* ProfileViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +65,7 @@
 				A00000000000000000000044 /* Services */,
 				A00000000000000000000045 /* Views */,
 				A0000000000000000000000B /* Info.plist */,
-				A0000000000000000000000D /* FuckXter.icon */,
+				A0000000000000000000000D /* fuckxter.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,7 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00000000000000000000022 /* FuckXter.icon in Resources */,
+				A00000000000000000000022 /* fuckxter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
