@@ -27,7 +27,7 @@ jobs:
             -path "*/Build/Products/Debug-iphonesimulator/FuckXter.app" \
             -print -quit)
           
-          mv -R "$APP_PATH" ./fuckxter.app
+          mv "$APP_PATH" ./fuckxter.app
 
       - name: Release
         uses: softprops/action-gh-release@master
