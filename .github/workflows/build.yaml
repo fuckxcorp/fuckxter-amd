@@ -27,13 +27,14 @@ jobs:
             -path "*/Build/Products/Debug-iphonesimulator/FuckXter.app" \
             -print -quit)
           
-          mv "$APP_PATH" ./fuckxter.app
+          ditto -c -k --sequesterRsrc --keepParent \
+            "$APP_PATH" ./fuckxter.app.zip
 
       - name: Release
         uses: softprops/action-gh-release@master
         with:
           tag_name: v0.0.1
-          files: ./fuckxter.app
+          files: ./fuckxter.app.zip
           body: |
             # 📝 Release Notes
             - Fixes and improvements
