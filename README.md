@@ -1,2 +1,3 @@
-# fuckxter-apple
-FuckXter Platform for Apple devices
+# FuckXter AMD
+
+FuckXter Application for Apple Mobile Devices
