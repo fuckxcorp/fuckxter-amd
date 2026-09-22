@@ -1,0 +1,26 @@
+name: I'm living all alone because
+
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    name: Keep running back, coming back for more
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Build for iOS Simulator
+        run: |
+          set -o pipefail
+
+          xcodebuild \
+            -project FuckXter.xcodeproj \
+            -scheme FuckXter \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            clean build
+          
+          ls
