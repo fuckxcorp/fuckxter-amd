@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      - name: Build for iOS Simulator
+      - name: Build!
         run: |
           set -o pipefail
 
@@ -23,4 +23,18 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             clean build
           
-          ls
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData \
+            -path "*/Build/Products/Debug-iphonesimulator/FuckXter.app" \
+            -print -quit)
+          
+          mv -R "$APP_PATH" ./fuckxter.app
+
+      - name: Release
+        uses: softprops/action-gh-release@master
+        if: ${{ inputs.release == 'yes' }}
+        with:
+          tag_name: v0.0.1
+          files: ./fuckxter.app
+          body: |
+            # 📝 Release Notes
+            - Fixes and improvements
